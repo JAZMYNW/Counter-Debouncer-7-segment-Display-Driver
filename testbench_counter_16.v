@@ -24,7 +24,7 @@ module testbench_counter_16();
 reg clk, reset_n, inc;
 wire[15:0] count;
 
-counter16 c1(.clk(clk),.reset_n(reset_n),.inc(inc),.count(count));
+counter_16 c1(.clk(clk),.reset_n(reset_n),.inc(inc),.count(count));
 
 always #5 clk = ~clk;
 always #10 inc=~inc;
